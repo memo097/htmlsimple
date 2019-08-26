@@ -1,0 +1,72 @@
+body {
+    background-color: gainsboro;
+    animation: couleur 3s infinite;
+}
+@keyframes couleur {
+    0% {
+        background-color: gray;
+    }
+    25% {
+        background-color: rgba(255, 255, 255, 0.192);
+    }
+    50% {
+        background-color: gainsboro;
+    }
+    75% {
+        background-color: rgba(0, 0, 0, 0.568);
+    }
+    100% {
+        background-color: rgba(180, 161, 161, 0.603);
+    }
+}
+.infos {
+    background-color: white;
+    border-radius: 4px;
+    display: block;
+    margin: auto;
+    width: 800px;
+    border: 1px solid black;
+    position: relative;
+
+}
+.imgprofil {
+    border-radius: 50%;
+    width: 150px;
+    display: block;
+    margin: auto;
+    border: 3px solid gray;
+}
+.imgprofil:hover {
+    animation: rotation 4s;
+}
+
+@keyframes rotation {
+    from {
+    transform: rotatez(0deg);
+    }
+    to {
+    transform: rotatey(359deg);
+    }
+}
+.infos > a {
+    position: absolute;
+    transform: translate(0, -50%);
+    top: 50%;
+    left: 10px;
+}
+.infos a img {
+    width: 30px;
+}
+.description {
+    text-align: center;
+}
+.formulaire {
+    background-color: white;
+    display:block;
+    margin: auto;
+    width: 800px;
+    border-radius: 4px;
+    border: 1px solid black;
+    margin-top: 10px;
+    text-align: center;
+}
